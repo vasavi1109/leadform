@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lead Data Capture Form</title>
+</head>
+<body>
+
+    <h2>Lead Data Capture Form</h2>
+
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DgK0000069JEV" method="POST">
+
+        <!-- Hidden Salesforce fields -->
+        <input type="hidden" name="oid" value="00DgK0000069JEV">
+        <input type="hidden" name="retURL" value="https://www.salesforce.com/">
+
+        <!-- Optional debugging -->
+        <!--
+        <input type="hidden" name="debug" value="1">
+        <input type="hidden" name="debugEmail" value="narkidimillivasavi1234@gmail.com">
+        -->
+
+        <!-- Standard Lead Fields -->
+        <label for="first_name">First Name:</label>
+        <input id="first_name" name="first_name" type="text" maxlength="40" size="20"><br><br>
+
+        <label for="last_name">Last Name:</label>
+        <input id="last_name" name="last_name" type="text" maxlength="80" size="20"><br><br>
+
+        <label for="email">Email:</label>
+        <input id="email" name="email" type="email" maxlength="80" size="20"><br><br>
+
+        <label for="company">Company:</label>
+        <input id="company" name="company" type="text" maxlength="40" size="20"><br><br>
+
+        <!-- Custom Lead Fields -->
+        <label for="00NgK00001NEsVp">Source URL:</label>
+        <input id="00NgK00001NEsVp" name="00NgK00001NEsVp" type="text" maxlength="80" size="20"><br><br>
+
+        <label for="00NgK00001NEscH">Interested:</label>
+        <input id="00NgK00001NEscH" name="00NgK00001NEscH" type="checkbox" value="1"><br><br>
+
+        <label for="00NgK00001NErOU">Customer Inquiry:</label><br>
+        <textarea id="00NgK00001NErOU" name="00NgK00001NErOU" rows="4" cols="50" wrap="soft"></textarea><br><br>
+
+        <label for="00NgK00001NEodf">Service Type:</label>
+        <select id="00NgK00001NEodf" name="00NgK00001NEodf" title="Service Type">
+            <option value="">--None--</option>
+            <option value="Training">Training</option>
+            <option value="Consulting">Consulting</option>
+            <option value="Feedback">Feedback</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+</html>
